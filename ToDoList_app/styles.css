@@ -1,0 +1,205 @@
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8bc989;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #3af782;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+}
+
+h1 {
+    color:#196b34;
+    margin-bottom: 20px;
+}
+
+.input-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+}
+
+.input-row label {
+    flex: 2;
+    font-weight: bold;
+    margin-right: 10px;
+    color:#196b34;
+    
+}
+
+.input-row input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    width: auto;
+    max-width: 100%; 
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color:#00a558;
+    color:rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.input-row select,
+.input-row input[type="date"],
+.input-row input[type="time"] {
+    flex: 3.5;
+    padding: 10px;
+    width: auto;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #00a558;
+    color: #000000;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #00a558;
+    color: rgb(0, 0, 0);
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #8bec9b;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.3s ease-in-out;
+}
+
+li:nth-child(odd) {
+    background-color: #60a085;
+}
+
+li:nth-child(even) {
+    background-color:  #60a085;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+.task-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.task-info span {
+    flex: 1;
+    color: #000000;
+}
+
+.task-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.tab {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.tab.active {
+    background-color: #3498db;
+    color: white;
+}
+
+.tab.inactive {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.tab-content {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.tab-content .tab-label {
+    font-weight: bold;
+    margin-right: 5px;
+    color: #1c5331;
+}
+
+.tab-content .tab-value {
+    color: #000000;
+}
+::placeholder{
+color: #000000;
+}
+/* ... Previous styles ... */
+
+
+.input-with-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.input-with-button input[type="text"] {
+    padding: 12px 15px ; /* Adjust padding as needed */
+    border-radius: 20px 0 0 20px; /* Rounded on the left side */
+    color: #333;
+    width: 100%;
+}
+
+.input-with-button button {
+    padding: 12px 15px ; /* Adjust padding as needed */
+    border-radius: 0 20px 20px 0; /* Rounded on the right side */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    /* Negative margin to make the button overlap slightly */
+}
+
+.task-actions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 10px;
+}
