@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Disney+ Hotstar Clone</title>
+    <link rel = "icon" href = 
+    "https://akm-img-a-in.tosshub.com/businesstoday/images/story/202003/disneyhotstar_660_110320034428.jpg?size=948:533" 
+            type = "image/x-icon">
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <img
+        src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg"
+        alt=""
+      />
+      <ul class="nav-links">
+        <li class="nav-items"><a href="#">TV</a></li>
+        <li class="nav-items"><a href="#">movies</a></li>
+        <li class="nav-items"><a href="#">sports</a></li>
+        <li class="nav-items"><a href="#">disney+</a></li>
+      </ul>
+
+      <div class="right-container">
+        <input type="text" class="search-box" placeholder="search" />
+        <button class="sub-btn">subscribe</button>
+        <a href="#" class="login-link">login</a>
+      </div>
+    </nav>
+
+    <div class="carousel-container">
+      <div class="carousel">
+        <!--	<div class="slider">
+					<div class="slide-content">
+						<h1 class="movie-title">loki</h1>
+						<p class="movie-des">
+							The mercurial villain Loki resumes his role as the God of Mischief
+							in a new series that takes place after the events of "Avengers
+							Endgame."
+						</p>
+					</div>
+					<img src="images/slider 1.PNG" alt="" />
+				</div>-->
+      </div>
+    </div>
+
+    <div class="video-card-container">
+      <div class="video-card">
+        <img src="images/disney.PNG" class="video-card-image" alt="" />
+        <video src="videos/disney.mp4" mute loop class="card-video"></video>
+      </div>
+
+      <div class="video-card">
+        <img src="images/pixar.PNG" class="video-card-image" alt="" />
+        <video src="videos/pixar.mp4" mute loop class="card-video"></video>
+      </div>
+
+      <div class="video-card">
+        <img src="images/geographic.PNG" class="video-card-image" alt="" />
+        <video src="videos/geographic.mp4" mute loop class="card-video"></video>
+      </div>
+
+      <div class="video-card">
+        <img src="images/marvel.PNG" class="video-card-image" alt="" />
+        <video src="videos/marvel.mp4" mute loop class="card-video"></video>
+      </div>
+
+      <div class="video-card">
+        <img src="images/star-wars.PNG" class="video-card-image" alt="" />
+        <video src="videos/star-war.mp4" mute loop class="card-video"></video>
+      </div>
+    </div>
+
+    <h1 class="title">recommended for you</h1>
+
+    <div class="movies-list">
+      <button class="pre-btn" title="btn">
+        <img src="images/pre.png" alt="" />
+      </button>
+      <button class="nxt-btn" title="btn">
+        <img src="images/nxt.png" alt="" />
+      </button>
+      <div class="card-container">
+        <div class="card">
+          <img src="images/poster 1.png" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Loki</h2>
+            <h6 class="des">The mercurial villain Loki resumes his role as the God of Mischief in a new series that takes place after the events of Avengers Endgame.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/poster 2.png" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Mulan</h2>
+            <h6 class="des">Masquerading as a male soldier to protect her father and tested every step of the way, Mulan must harness her inner-strength and embrace her true potential.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/poster 3.png" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">The Falcon and the Winter Soldier</h2>
+            <h6 class="des">Following the events of 'Avengers: Endgame,' Sam Wilson/Falcon and Bucky Barnes/Winter Soldier team up in a global adventure that tests their abilities -- and their patience.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/poster 4.png" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Avenger's Endgame</h2>
+            <h6 class="des">After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/poster 5.png" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Thor Ragnarok</h2>
+            <h6 class="des">Imprisoned on the planet Sakaar, Thor must race against time to return to Asgard and stop Ragnarök, the destruction of his world, at the hands of the powerful and ruthless villain Hela.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/poster 6.png" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Avengers</h2>
+            <h6 class="des">Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_256/sources/r1/cms/prod/3156/1063156-v-a2019de35b6e" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Grey's Anatomy</h2>
+            <h6 class="des">A drama centered on the personal and professional lives of five surgical interns and their supervisors</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/poster 8.png" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Soul</h2>
+            <h6 class="des">After landing the gig of a lifetime, a New York jazz pianist suddenly finds himself trapped in a strange land between Earth and the afterlife.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/poster 9.png" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Raya and The Last Dragon</h2>
+            <h6 class="des">In a realm known as Kumandra, a re-imagined Earth inhabited by an ancient civilization, a warrior named Raya is determined to find the last dragon.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/poster 10.png" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Luca</h2>
+            <h6 class="des">On the Italian Riviera, an unlikely but strong friendship grows between a human being and a sea monster disguised as a human.</h6>
+
+            </h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/poster 11.png" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Ford vs Ferrari</h2>
+            <h6 class="des">American car designer Carroll Shelby and driver Ken Miles battle corporate interference and the laws of physics to build a revolutionary race car for Ford in order to defeat Ferrari at the 24 Hours of Le Mans in 1966.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/poster 12.png" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Dark Phoenix</h2>
+            <h6 class="des">Jean Grey begins to develop incredible powers that corrupt and turn her into a Dark Phoenix, causing the X-Men to decide if her life is worth more than all of humanity.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="title">popular shows</h1>
+
+    <div class="movies-list">
+      <button class="pre-btn" title="btn">
+        <img src="images/pre.png" alt="" />
+      </button>
+      <button class="nxt-btn" title="btn">
+        <img src="images/nxt.png" alt="" />
+      </button>
+      <div class="card-container">
+        <div class="card">
+          <img
+            src="https://www.themoviedb.org/t/p/w220_and_h330_face/wEYKsIHnsdPsNDWK8hiKbtRotCY.jpg"
+            class="card-img"
+            alt=""
+          />
+          <div class="card-body">
+            <h2 class="name">Anupama</h2>
+            <h6 class="des">Anupamaa sacrificed a lot to become a loyal wife, a devoted daughter-in-law, and a loving mother, only to be disrespected in return. After the bitter realization, she sets out to live on .</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/4267/1364267-v-59ed5cfdea3a"
+            class="card-img"
+            alt=""
+          />
+          <div class="card-body">
+            <h2 class="name">Yeh Rishta Kya Kehlata Hai</h2>
+            <h6 class="des">Yeh Rishta Kya Kehlata Hai is a neverending tale of reformatted stories that talks about how two people meet, time and again, which leads to their relationship progressing further with each encounter. It also shows why people chose to live in nuclear families.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkBCqwSAQZMrCTlJgRwoYJl0V5yon04BUHAcq2gIbFt1Xdvir3"
+            class="card-img"
+            alt=""
+          />
+          <div class="card-body">
+            <h2 class="name">Modern Family</h2>
+            <h6 class="des">Three different but related families face trials and tribulations in their own uniquely comedic ways.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_256/sources/r1/cms/prod/2442/862442-v"
+            class="card-img"
+            alt=""
+          />
+          <div class="card-body">
+            <h2 class="name">Agents Of S.H.E.I.L.D</h2>
+            <h6 class="des">The missions of the Strategic Homeland Intervention, Enforcement and Logistics Division.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/4165/1274165-v-b8a97c4ed9a8"
+            class="card-img"
+            alt=""
+          />
+          <div class="card-body">
+            <h2 class="name">More Than Friends</h2>
+            <h6 class="des">A romantic drama about a man and a woman who, due to a misunderstanding, have held a crush on each other for over 10 years.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/poster 7.png" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Pirates Of The Carribean</h2>
+            <h6 class="des">Blacksmith Will Turner teams up with eccentric pirate "Captain" Jack Sparrow to save his love, the governor's daughter, from Jack's former pirate allies, who are now undead.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/poster 6.png" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Avengers</h2>
+            <h6 class="des">Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/poster 5.png" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Thor Ragnarok</h2>
+            <h6 class="des">Imprisoned on the planet Sakaar, Thor must race against time to return to Asgard and stop Ragnarök, the destruction of his world, at the hands of the powerful and ruthless villain Hela.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/poster 4.png" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Avengers Endgame</h2>
+            <h6 class="des">After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/poster 3.png" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">The Falcon and the Winter Soldier</h2>
+            <h6 class="des">Following the events of 'Avengers: Endgame,' Sam Wilson/Falcon and Bucky Barnes/Winter Soldier team up in a global adventure that tests their abilities -- and their patience.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/poster 2.png" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Mulan</h2>
+            <h6 class="des">Masquerading as a male soldier to protect her father and tested every step of the way, Mulan must harness her inner-strength and embrace her true potential.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/poster 1.png" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Loki</h2>
+            <h6 class="des">The mercurial villain Loki resumes his role as the God of Mischief in a new series that takes place after the events of Avengers Endgame.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="title">latest & trending</h1>
+
+    <div class="movies-list">
+      <button class="pre-btn" title="btn">
+        <img src="images/pre.png" alt="" />
+      </button>
+      <button class="nxt-btn" title="btn">
+        <img src="images/nxt.png" alt="" />
+      </button>
+      <div class="card-container">
+        <div class="card">
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/244/1280244-v-58d850cbecc4"
+            class="card-img"
+            alt=""
+          />
+          <div class="card-body">
+            <h2 class="name">Masoom</h2>
+            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/3195/1263195-v-b44cc0202665"
+            class="card-img"
+            alt=""
+          />
+          <div class="card-body">
+            <h2 class="name">9 Hours</h2>
+            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_256/sources/r1/cms/prod/6585/1536585-v-d7c42528fca0"
+            class="card-img"
+            alt=""
+          />
+          <div class="card-body">
+            <h2 class="name">Great Expectations</h2>
+            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto/sources/r1/cms/prod/9473/1249473-h-b82330364ddc"
+            class="card-img"
+            alt=""
+          />
+          <div class="card-body">
+            <h2 class="name">Escaype Live</h2>
+            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/4158/1254158-v-8293462a94f2"
+            class="card-img"
+            alt=""
+          />
+          <div class="card-body">
+            <h2 class="name">Obi-Wan KENOBI</h2>
+            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/poster 3.png" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">The Falcon and the Winter Soldier</h2>
+            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/9317/1269317-v-c851767a526b"
+            class="card-img"
+            alt=""
+          />
+          <div class="card-body">
+            <h2 class="name">Ms Marvel</h2>
+            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/1518/1161518-v-8d86a7ed8500"
+            class="card-img"
+            alt=""
+          />
+          <div class="card-body">
+            <h2 class="name">MoonKnight</h2>
+            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/4965/1094965-v-185c17cd9ace"
+            class="card-img"
+            alt=""
+          />
+          <div class="card-body">
+            <h2 class="name">Special OPS 1.5</h2>
+            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/3017/1083017-v-4ab3c2456f2a"
+            class="card-img"
+            alt=""
+          />
+          <div class="card-body">
+            <h2 class="name">Hawkeye</h2>
+            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/305/1540305-v-d5dc8385b0bc"
+            class="card-img"
+            alt=""
+          />
+          <div class="card-body">
+            <h2 class="name">Secret Invasion</h2>
+            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/2733/1122733-v-5df3bdae2d7a"
+            class="card-img"
+            alt=""
+          />
+          <div class="card-body">
+            <h2 class="name">Rudra</h2>
+            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 class="title">Tales From Japan</h1>
+
+    <div class="movies-list">
+      <button class="pre-btn" title="btn">
+        <img src="images/pre.png" alt="" />
+      </button>
+      <button class="nxt-btn" title="btn">
+        <img src="images/nxt.png" alt="" />
+      </button>
+      <div class="card-container">
+        <div class="card">
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/6376/1446376-v-d09d4b2fb2c2"
+            class="card-img"
+            alt=""
+          />
+          <div class="card-body">
+            <h2 class="name">Tokyo Revengers</h2>
+            <h6 class="des">Hanagaki Takemichi lives an unsatisfying life right up until his death. Waking up 12 years in the past, he reckons with the eventual fate of his friends and tries to prevent an unfortunate future.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/207/1470207-v-0b47cef798cd"
+            class="card-img"
+            alt=""
+          />
+          <div class="card-body">
+            <h2 class="name">Dr.Stone</h2>
+            <h6 class="des">Awakened into a world where humanity has been petrified, scientific genius Senku and his brawny friend Taiju use their skills to rebuild civilization.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/1306/1551306-v-4c0a32081c25"
+            class="card-img"
+            alt=""
+          />
+          <div class="card-body">
+            <h2 class="name">Black Clover/h2>
+            <h6 class="des">Asta and Yuno were abandoned together at the same church and have been inseparable since. As children, they promised that they would compete against each other to see who would become the next Emperor Magus.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/1127/1551127-v-ca25db3b7200"
+            class="card-img"
+            alt=""
+          />
+          <div class="card-body">
+            <h2 class="name">GIFT</h2>
+            <h6 class="des">The first-ever solo ice show at Tokyo Dome, "GIFT," is a story that self-portrays Yuzuru Hanyu's life and future on the ice.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/5679/1495679-v-18ee4b49e484"
+            class="card-img"
+            alt=""
+          />
+          <div class="card-body">
+            <h2 class="name">Tengoku Daimakyo</h2>
+            <h6 class="des">A boy grows up behind the safe walls of an apocalyptic Japan full of monsters. Tokyo flourishes as a paradise, while outside the walls of hell dangers lurk. However, a small group searches for heaven.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/784/1410784-v-ae1be1c1d779" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Overlord: The Dark Hero</h2>
+            <h6 class="des">An office worker in a dystopian world logs onto a video game for the last time only to find out that he, along with his entire guild, has been transported to another reality.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/8561/1338561-v-e70f004341c2" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Tomodachi Game</h2>
+            <h6 class="des">Yuuichi Katagiri knows the hardships of not having enough funds. He works hard to save up in order to go on the high school trip. However, after the class' money is all collected; it's stolen. Suspicion falls on two of Yuuichi's friends.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/5858/1345858-v-629a422bee2a" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">The TATAMI</h2>
+            <h6 class="des">A sweltering midsummer day when Ozu, the protagonist's "terrible friend," accidentally drowns the only remote control for the air conditioning unit in their apartment. While they discuss their predicament with Akashi, the protagonist's raven-haired love interest, a sloppily-dressed time-travelling student arrives from 25 years in the future, prompting the protagonist to borrow his time machine in an effort to snatch the remote control from the past before it breaks.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/2528/1452528-v-d52e29480102" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Summer Time Rendering</h2>
+            <h6 class="des">Upon hearing of Ushio's death, Shinpei returns to his hometown of Wakayama City on Hitogashima and reunites with his childhood friend's family. The funeral goes smoothly, but under the surface something strange is brewing on the island. What mysteries await him on this secluded summer island?</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/3960/1453960-v-ca14eb24cbb2" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Because We Forget Everything</h2>
+            <h6 class="des">M, has a girlfriend of five years named F. He loses contact with her. Then a woman reveals that his girlfriend has been missing since Halloween. His own quiet life begins to change as his search drags him into other people's problems.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/8041/1438041-v-c34cc49c9c6e" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Gannibal</h2>
+            <h6 class="des">There is a rumor about this beautiful village: people get eaten here. Police officer Agawa Daigo uncovers a horrifying truth lurking in everyday life.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/5243/1455243-v-c7c8070be2ee" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Aoashi</h2>
+            <h6 class="des">Ashito Aoi, who lives in Ehime prefecture. Ashito has a strong talent in soccer, but he tries to hide it. Due to his very straightforward personality, he causes a disaster that serves as a huge setback for him.</h6>
+            <button class="watchlist-btn">add to watchlist</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="index.js" async></script>
+  </body>
+</html>
